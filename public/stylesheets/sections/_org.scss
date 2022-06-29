@@ -1,0 +1,37 @@
+.clients {
+    background: $background_color_2;
+    text-align: center;
+    padding: 0.5rem 2rem;
+
+    img {
+        margin: 1rem 0rem;
+        max-width: 45%;
+        transition: all 0.4s ease-in-out;
+        display: inline-block;
+        filter: grayscale(100);
+
+        &:hover {
+            filter: none;
+            transform: scale(1.15);
+        }
+
+        &.hd{
+            max-height: 50%;
+        }
+
+        &.hi{
+            max-width: 80%;
+            // max-height: 60%;
+        }
+
+        &.ha{
+            max-height: 40%;
+        }
+    }
+}
+
+@media (max-width: $ss-sm) {
+    .clients img {
+        max-width: 40%;
+    }
+}

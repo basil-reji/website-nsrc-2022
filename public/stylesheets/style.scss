@@ -103,6 +103,52 @@ h6 {
     }
 }
 
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: $color_5;
+
+    &::before {
+        content: "";
+        position: fixed;
+        top: calc(50% - 0px);
+        left: calc(50% - 30px);
+        border: 6px solid $color_13;
+        border-top-color: rgba($color: #000000, $alpha: 0.2);
+        border-bottom-color: rgba($color: #000000, $alpha: 0.2);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: animate-preloader 1s linear infinite;
+        z-index: 100;
+    }
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 section {
 	padding: 60px 0;
 	overflow: hidden;
@@ -111,34 +157,33 @@ section {
 	background-color: $background_color_2;
 }
 .section-title {
-	padding-bottom: 40px;
+	margin-bottom: 60px;
+	position: relative;
+	padding-bottom: 20px;
+	&::before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 60px;
+		height: 5px;
+		background: $color_1;
+		bottom: 0;
+		left: calc(50% - 25px);
+	}
 	h2 {
-		font-size: 14px;
-		font-weight: 500;
-		padding: 0;
-		line-height: 1px;
-		margin: 0 0 5px 0;
-		letter-spacing: 2px;
+		font-size: 36px;
 		text-transform: uppercase;
-		color: #5c8eb0;
-		font-family: $font_family_3;
-		&::after {
-			content: "";
-			width: 120px;
-			height: 1px;
-			display: inline-block;
-			background: $color_15;
-			margin: 4px 10px;
-		}
+		text-align: center;
+		font-weight: 700;
+		margin-bottom: 10px;
 	}
 	p {
+		text-align: center;
+		padding: 0;
 		margin: 0;
-		margin: 0;
-		font-size: 36px;
-		font-weight: 700;
-		text-transform: uppercase;
-		font-family: $background_color_2;
-		color: #263d4d;
+		font-size: 18px;
+		font-weight: 500;
+		color: #9195a2;
 	}
 }
 

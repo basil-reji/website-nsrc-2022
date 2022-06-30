@@ -1,0 +1,133 @@
+#timeline {
+    background-color: $background_color_2;
+    position: relative;
+
+    h5{
+        // font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+
+        span{
+            font-family: "Open Sans", sans-serif;;
+            opacity: 0.5;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+    }
+
+    .text-right{
+        text-align: right;
+    }
+
+    .circle {
+        padding: 13px 20px;
+        border-radius: 50%;
+        background-color: $color_1;
+        color: #fff;
+        max-height: 50px;
+        z-index: 2;
+    }
+
+    .how-it-works.row .col-2 {
+        align-self: stretch;
+        position: relative;
+    }
+    .how-it-works.row .col-2::after {
+        content: "";
+        position: absolute;
+        border-left: 3px solid $color_1;
+        z-index: 1;
+    }
+    .how-it-works.row .col-2.bottom{
+
+        &:nth-child(odd){
+            &::after {
+                height: 50%;
+                left: 50%;
+                top: 50%;
+            }
+        }
+        &:nth-child(even){
+            &::after {
+                height: 50%;
+                left: calc(50% - 3px);
+                top: 50%;
+            }
+        }
+
+    }
+    .how-it-works.row .col-2.full{
+
+        &:nth-child(odd){
+            &::after {
+                position: absolute;
+                height: 100%;
+                left: calc(50%);
+            }
+        }
+
+        &:nth-child(even){
+            &::after {
+                position: absolute;
+                height: 100%;
+                left: calc(50% - 3px);
+            }
+        }
+    }
+
+    .how-it-works.row .col-2.top{
+        &:nth-child(odd){
+            &::after {
+                height: 50%;
+                left: 50%;
+                top: 0;
+            }
+        }
+        &:nth-child(even){
+            &::after {
+                height: 50%;
+                left: calc(50% - 3px);
+                top: 0;
+            }
+        }
+    }
+
+    .timeline div {
+        padding: 0;
+        height: 40px;
+    }
+    .timeline hr {
+        border-top: 3px solid $color_1;
+        height: 2px;
+        background-color: $color_1;
+        opacity: 1;
+        margin: 0;
+        top: 17px;
+        position: relative;
+    }
+    .timeline .col-2 {
+        display: flex;
+        overflow: hidden;
+    }
+    .timeline .corner {
+        border: 3px solid $color_1;
+        width: 100%;
+        position: relative;
+        border-radius: 15px;
+    }
+    .timeline .top-right {
+        left: 50%;
+        top: -50%;
+    }
+    .timeline .left-bottom {
+        left: -50%;
+        top: calc(50% - 3px);
+    }
+    .timeline .top-left {
+        left: -50%;
+        top: -50%;
+    }
+    .timeline .right-bottom {
+        left: 50%;
+        top: calc(50% - 3px);
+    }
+}

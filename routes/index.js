@@ -3,7 +3,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'NSRC 2022' });
+  res.render('index', { title: 'NSRC 2022', home_page: true });
+});
+
+router.get('/team', function(req, res, next) {
+  res.render('team', { title: 'Team | NSRC 2022', team_page: true  });
+});
+
+router.get('/venue', function(req, res, next) {
+  res.render('venue', { title: 'Team | NSRC 2022',  venue_page: true });
 });
 
 module.exports = router;

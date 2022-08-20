@@ -92,6 +92,13 @@
     }
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
+
+    var element = document.getElementById("hero");
+    if (typeof (element) != 'undefined' && element != null) {
+
+    } else {
+      selectHeader.classList.add('header-dark');
+    }
   }
 
   /**

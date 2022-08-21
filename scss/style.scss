@@ -45,6 +45,9 @@
 body {
     font-family: $font_family_2;
     color: #444444;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
@@ -150,41 +153,46 @@ h6 {
 }
 
 section {
-	padding: 60px 0;
-	overflow: hidden;
+    padding: 60px 0;
+    overflow: hidden;
 }
+
 .section-bg {
-	background-color: $background_color_2;
+    background-color: $background_color_2;
 }
+
 .section-title {
-	margin-bottom: 60px;
-	position: relative;
-	padding-bottom: 20px;
-	&::before {
-		content: "";
-		position: absolute;
-		display: block;
-		width: 60px;
-		height: 5px;
-		background: $color_1;
-		bottom: 0;
-		left: calc(50% - 25px);
-	}
-	h2 {
-		font-size: 36px;
-		text-transform: uppercase;
-		text-align: center;
-		font-weight: 700;
-		margin-bottom: 10px;
-	}
-	p {
-		text-align: center;
-		padding: 0;
-		margin: 0;
-		font-size: 18px;
-		font-weight: 500;
-		color: #9195a2;
-	}
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 20px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 5px;
+        background: $color_1;
+        bottom: 0;
+        left: calc(50% - 25px);
+    }
+
+    h2 {
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: #9195a2;
+    }
 }
 
 
@@ -199,3 +207,5 @@ section {
 @import './sections/contact';
 @import './sections/team';
 @import './sections/venue';
+@import './pages/register';
+

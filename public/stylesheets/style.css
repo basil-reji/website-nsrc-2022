@@ -23,6 +23,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -434,6 +437,7 @@ section {
   padding: 1rem;
   color: #fff;
   font-size: 14px;
+  margin-top: auto;
 }
 #footer .footer-top {
   background: #15222b;
@@ -1240,4 +1244,131 @@ section {
 
 #venue .venue-gallery:hover img {
   transform: scale(1.1);
+}
+
+#register {
+  margin-top: 7rem;
+}
+#register .entry {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+#register .entry .header-img {
+  overflow: hidden;
+}
+#register .entry .entry-body {
+  padding: 2rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+}
+#register .entry .entry-body .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+#register .entry .entry-body .title h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0;
+}
+#register .entry .entry-body .title a {
+  color: rgba(21, 34, 43, 0.8);
+  transition: 0.3s;
+}
+#register .entry .entry-body .title a:hover {
+  color: #15222b;
+}
+#register .entry .entry-body .meta {
+  color: rgba(21, 34, 43, 0.5);
+}
+#register .entry .entry-body .meta ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#register .entry .entry-body .meta ul li {
+  margin: 0.1rem 1rem;
+}
+#register .entry .entry-body .meta ul li:first-child {
+  margin-left: 0;
+}
+#register .entry .entry-body .meta ul li i {
+  font-size: 0.8rem;
+  margin-right: 0.2rem;
+  line-height: 0;
+}
+#register .entry .entry-body .meta ul li time {
+  font-size: 0.8rem;
+}
+#register .entry .entry-body .content {
+  padding: 0;
+  margin: 1rem 0rem;
+}
+#register .entry .entry-body .content p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #f0f4f8;
+  text-align: justify;
+}
+#register .entry .entry-body .content p:last-child {
+  margin-bottom: 0;
+}
+#register .entry .entry-body .content h4 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+#register .entry .entry-body h5 {
+  font-style: italic;
+}
+#register .entry .entry-body .buttons a {
+  cursor: pointer;
+  width: auto;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0rem;
+  padding: 0.8rem 1rem;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background-color: #139fa1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+#register .entry .entry-body .buttons a:hover {
+  background-color: #08D9D6;
+}
+#register .entry .entry-body .buttons a .bi {
+  height: 1.5rem;
+  fill: #fff;
+  margin-right: 0.75rem;
+}
+#register .entry .entry-body .read-more {
+  margin-top: 1.5rem;
+}
+#register .entry .footer {
+  margin: 1rem 2rem;
+  margin-top: 0;
+  border-top: 1px solid rgba(21, 34, 43, 0.1);
+}
+#register .entry .footer a {
+  color: rgba(21, 34, 43, 0.2);
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+#register .entry .footer a:hover {
+  color: #08D9D6;
+}
+#register .entry .footer i {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
 }

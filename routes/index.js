@@ -14,8 +14,8 @@ router.get('/venue', function(req, res, next) {
   res.render('venue', { title: 'Venue| NSRC 2022',  venue_page: true });
 });
 
-router.get('/register', function(req, res, next) {
-  res.render('register', { title: 'Register | NSRC 2022',  venue_page: true });
-});
+// router.get('/register', function(req, res, next) {
+//   res.render('register', { title: 'Register | NSRC 2022',  venue_page: true });
+// });
 
 module.exports = router;

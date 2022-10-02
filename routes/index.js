@@ -11,7 +11,11 @@ router.get('/team', function(req, res, next) {
 });
 
 router.get('/venue', function(req, res, next) {
-  res.render('venue', { title: 'Venue| NSRC 2022',  venue_page: true });
+  res.render('venue', { title: 'Venue | NSRC 2022',  venue_page: true });
+});
+
+router.get('/schedule', function(req, res, next) {
+  res.render('schedule', { title: 'Schedule | NSRC 2022',  schedule_page: true });
 });
 
 // router.get('/register', function(req, res, next) {
